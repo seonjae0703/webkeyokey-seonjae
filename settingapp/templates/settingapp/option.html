@@ -1,0 +1,63 @@
+{% extends 'main/base.html' %} {% load static%}
+
+<!-- CSS -->
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'settingapp/css/option.css' %}" />
+{% endblock css%}
+
+<!-- 기본 Navbar -->
+
+<!-- Content -->
+
+{% block content %}
+
+<div class="container">
+  <div class="menuname">
+    <h2> 메뉴이름 </h2>
+  </div>  
+
+  <div class="optionetc">
+    <p>
+        기타옵션
+    </p>
+  </div>
+
+  <form>
+    <div class="form-row">
+      <div class="col-2">
+        <label for="inputtext">옵션1</label>
+      </div>
+
+      <div class="col-4">
+        <input type="text" class="form-control input-style" placeholder="옵션명">
+      </div>
+
+      <div class="col-2">
+        <label for="inputtext">가격(원)</label>
+      </div>
+
+      <div class="col-4">
+        <input type="text" class="form-control input-style" placeholder="가격(원)">
+      </div>
+    </div>
+
+    <!-- <div class="form-row">
+      <div class="col-7">
+        <label for="inputtext">옵션1</label>
+        <input type="text" class="form-control" placeholder="옵션명">
+      </div>
+
+      <div class="col">
+        <label for="inputtext">가격(원)</label>
+        <input type="text" class="form-control" placeholder="가격(원)">
+      </div>
+    </div> -->
+
+    <div class="buttons">
+      <button type="button" class="btn btn-primary">확인</button> 
+      <button type="button" class="btn btn-light">취소</button>
+    </div>
+  </form>
+</div>
+
+{% endblock content %}

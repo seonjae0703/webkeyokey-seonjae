@@ -1,0 +1,87 @@
+{% extends 'main/base.html' %} {% load static %}
+
+<!-- CSS -->
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'userapp/css/signup.css' %}" />
+{% endblock css%}
+
+<!-- 기본 Navbar -->
+
+<!-- Content -->
+
+{% block content %}
+<div class="container">
+  <form>
+    <div class="name">
+      <div class="col">
+      <!--<div class="form-group">-->
+        <input type="text" class="form-control input-style" placeholder="이름">
+      <!--</div>-->
+    </div>
+    </div>
+ 
+    <div class="email">
+      <div class="col">
+        <input type="email" class="form-control input-style" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일 주소">
+      </div>
+    </div>
+
+    <div class="phonenumber">
+      <div class="col">
+        <input type="text" class="form-control input-style" placeholder="전화번호">
+      </div>   
+    </div>
+
+    <div class="id">
+      <div class="col">   
+        <input type="text" class="form-control input-style" placeholder="아이디(사업자번호 10자리)">
+      </div>
+    </div>
+
+    <div class="password">
+      <div class="col">
+        <input type="password" class="form-control input-style" id="exampleInputPassword1" placeholder="비밀번호">
+      </div>
+    </div>
+
+    <div class="repassword row">
+      <div class="col-9">
+        <input type="password" class="form-control input-style" id="inputPassword2" placeholder="비밀번호 재입력">
+      </div>
+
+      <div class="col-3">
+        <a class="checkpasswordbutton" href='#'>
+          <button type="submit" class="btn btn-primary mb-2">확인</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="question">
+      <div class="col">
+        <select class="form-control input-style" id="exampleFormControlSelect1" placeholder="비밀번호 찾기 질문">
+          <option>나의 보물 1호는?</option>
+          <option>나의 고향은?</option>
+          <option>붕어빵 먹을 때 가장 먼저 먹는 부위는?</option>
+          <option>나의 MBTI는?</option>
+          <option>돌잡이 때 잡은 것은?</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="answer">
+      <div class="col">
+        <input type="text" class="form-control input-style" placeholder="답변">
+      </div>
+    </div>
+
+    <a class="signupbutton">
+      <button type="submit" class="btn btn-primary">회원가입</button>
+    </a>
+  </form>
+</div>
+
+     
+{% endblock content %}
+
+
+
